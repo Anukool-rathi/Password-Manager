@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<%- include("partials/navbar") %> 
+
+<div class="container p-3">
+  <% passwords.forEach(password => {%>
+    <div class="d-flex align-items-center m-2 text-white rounded items">
+      <a class="nav-link text-light me-lg-auto "><%= password.title %> </a>
+      <a class="btn btn-sm m-2" href="user/edit/<%= password.id %> " role="button">Edit Password</a>
+      <a class="btn btn-sm m-2" href="user/delete/?id=<%= password.id %>" role="button">Delete</a>
+      <a class="btn btn-sm m-2" href="user/<%= password.id %> " role="button">See Password</a>
+    </div>
+  <% }) %>
+</div>
+
+<div class="add-btn">
+  <a class="btn btn-lg" href="/user/add" role="button">Add Password</a>
+</div>
+
+<%- include('partials/footer') %>

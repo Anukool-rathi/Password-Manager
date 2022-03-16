@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<%- include("partials/navbar") %> 
+
+<div class="form pt-5">
+    <h1 class="card-title p-1">Edit Password</h1>
+    <div class="card">
+      <div class="card-body">
+        <form action="/user/edit/<%= id %> " method="POST">
+          <div class="mb-2">
+            <label for="password" class="form-label">New Password</label>
+            <input type="text" class="form-control" name="password" placeholder="Enter new password">
+          </div>
+          <div class="mb-2">
+            <label for="key" class="form-label">Key</label>
+            <input type="text" class="form-control" name="key" placeholder="Enter key">
+          </div>
+          <button type="submit" class="btn mt-1">Update</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<%- include('partials/footer') %>

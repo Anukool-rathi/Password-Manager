@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="form">
+  <h1 class="card-title p-1">Login</h1>
+  <div class="card">
+    <div class="card-body">
+      <form action="/auth/login" method="POST">
+        <div class="mb-2">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" placeholder="Enter Email" class="form-control" name="email" required>
+        </div>
+        <div class="mb-2">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" placeholder="Enter Password" class="form-control" name="password" required>
+        </div>
+        <button type="submit" class="btn mt-1">Login</button>
+      </form>
+      <h4><%= info %> </h4>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

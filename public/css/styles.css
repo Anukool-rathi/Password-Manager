@@ -1,0 +1,44 @@
+body {
+    background-color: #EEEEEE;
+    color: #393E46;
+}
+
+nav{
+    background-color: #222831;
+    color: aliceblue;
+}
+
+.add-btn{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.centered {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.btn{
+    background-color: #393E46;
+    color: #EEEEEE;
+}
+
+.footer{
+    background-color: #222831;
+    color: aliceblue;
+}
+
+.card{
+    width: 50rem;
+    border-radius: 20px;
+}
+
+.form{
+    padding-top: 150px;
+    padding-left: 400px;
+}
+
+.items{
+    background-color: #222831;
+    color: aliceblue;
+}

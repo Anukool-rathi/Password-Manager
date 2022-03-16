@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<%- include("partials/navbar") %>
+
+<div class="form pt-5">
+  <div class="card">
+    <div class="card-body">
+      <form action="/user/<%= title %> " method="POST">
+        <div class="mb-2">
+          <label for="key" class="form-label">Key</label>
+          <input type="text" class="form-control" name="key" placeholder="Enter Key">
+        </div>
+        <button type="submit" class="btn mt-1">Submit</button>
+      </form>
+      <h4><%= info %> </h4>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

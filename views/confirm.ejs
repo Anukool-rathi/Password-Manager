@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+<%- include("partials/navbar") %> 
+
+<div class="position-absolute top-50 start-50 translate-middle">
+    <h1>Are you sure you want to delete?</h1>
+    <div class="d-flex justify-content-center">
+        <form action="/user/delete/?id=<%= id %>" method="post">
+            <button name="del" class="btn mt-1 align-self-center">Confirm</button>
+        </form>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
